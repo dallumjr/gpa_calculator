@@ -23,3 +23,7 @@ Functionality of guest page is exactly the same, less the ability to save course
 ## Guest Calculation
 ![Guest Show](./git_images/Guest_View.png?raw=true)
 ![Guest Add](./git_images/Guest_View.png?raw=true)
+
+## TODO
+- Add Update and Destroy routes.
+- I would really like to use a PDF parser / any file parser to extract data from files, and combine multiple transcripts for a single calculation.
