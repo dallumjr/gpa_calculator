@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Your Personal GPA Calculator</h1>
+        <p class="lead">
+            You've worked hard all semester. You put in the work. Now, check the 
+            numbers to see your progress, and make goals for yourself! 
+        </p>
+        <a href="/calculate"><button class="btn btn-primary">Calculate</button></a>
+    </div>
+    <% if (!currentUser) { %>
+        <div class="text-center">
+            <p>For one time calculations, <a href="/calculate/guest">continue as a guest.</a>
+            </p>
+        </div>
+    <% }%>
+    
+    
+</div>
+
+<% include ./partials/footer %>

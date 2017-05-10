@@ -1,0 +1,72 @@
+<% include ./partials/header %>
+
+    <div class="container">
+        <div id="welcome" class="jumbotron text-center">
+          <h1>Add Your Classes!</h1>
+          <p>Note: Refreshing, or leaving this page will cause your data to be lost.</p>
+          <p>If you wish to store your information for future viewing, please 
+          <a href="/login">login</a> or <a href="/register">sign up.</a></p>
+          </div>
+
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Course Name</th>
+                  <th>Units</th>
+                  <th>Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+          </table>
+        <h3 id="gpa" class="text-right">Total GPA: </h3>
+        <button class="btn btn-primary" id="toggler" data-toggle="modal" data-target="#myModal">Add A Class</button>
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Enter Course Information</h4>
+              </div>
+              <!-- Form starts here-->
+              <div class="modal-body">
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                      <label for="name" class="col-sm-3 control-label">Course Name</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Course Name.">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="units" class="col-sm-3 control-label">Units</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="units" placeholder="Enter Number of Units." required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="received" class="col-sm-3 control-label">Grade</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="received" placeholder="Input Grade Received. (Example: A+)" required>
+                      </div>
+                    </div>
+                    <!--<div class="form-group">-->
+                    <!--  <div class="col-sm-offset-3 col-sm-10">-->
+                    <!--    <button id="addToTable" class="btn btn-primary btn-md">Add</button>-->
+                    <!--  </div>-->
+                    <!--</div>-->
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="addToTable" type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<script src="/javascript/guest.js"></script>
+
+<% include ./partials/footer %>

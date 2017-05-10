@@ -1,0 +1,57 @@
+body, html {
+    width: 100%;
+}
+/*form*/
+#addCourses {
+    display: none;
+}
+/*button*/
+#showForm{
+   display: block; 
+   
+}
+table {
+    display: none;
+}
+
+#userTable{
+    display: table;
+}
+#gpaGuest {
+    display: block;
+    float: right;
+}
+
+#gpa{
+    float: right;
+    display: none;
+}
+
+#welcome {
+    display: block;
+}
+
+
+body {
+    color: #50627d;
+}
+#showForm button {
+    outline: none;
+}
+
+.navbar-custom {
+    border: 1px solid transparent;
+    border-radius: 0;
+    background: #657998;
+    
+}
+.navbar-default .navbar-nav>li>a {
+    color: #dadfe8;
+}
+
+.jumbotron {
+    background: #d5dde8;
+}
+.lead {
+    color: #5e6d7b;
+}
