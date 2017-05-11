@@ -22,7 +22,7 @@ Functionality of guest page is exactly the same, less the ability to save course
 
 ## Guest Calculation
 ![Guest Show](./git_images/Guest_View.png?raw=true)
-![Guest Add](./git_images/Guest_View.png?raw=true)
+![Guest Add](./git_images/Guest_Add.png?raw=true)
 
 ## TODO
 - Add Update and Destroy routes.
